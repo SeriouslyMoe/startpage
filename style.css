@@ -1,0 +1,14 @@
+@font-face {
+    font-family: material;
+    src: url(sansation_bold.woff);
+}
+
+body {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #383838;
+}
+
+.search {
+    color: white;
+}
