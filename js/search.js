@@ -26,13 +26,6 @@ function search(query){
                 query.replaceChars(" ", "+");
             break;
 
-        case "-y":
-            query = query.substr(3);
-            window.location =
-                "https://www.youtube.com/results?search_query=" +
-                query.replaceChars(" ", "+");
-            break;
-
         case "-d":
             query = query.substr(3);
             window.location =
@@ -40,12 +33,33 @@ function search(query){
                 query.replaceChars(" ", "+");
             break;
 
+		case "-i":
+	        query = query.substr(3);
+	        window.location =
+	            "https://www.google.com/search?site=&tbm=isch&q=" +
+	            query.replaceChars(" ", "+");
+	        break;
+
     	case "-n":
         	query=query.substr(3);
         	window.location =
             	"https://nyaa.se/?page=search&cats=0_0&filter=0&term=" +
             	query.replaceChars(" ", "%20");
             break;
+
+		case "-w":
+			query = query.substr(3);
+			window.location =
+				"https://en.wikipedia.org/wiki/Special:Search?search=" +
+				query.replaceChars(" ", "+");
+			break;
+
+		case "-y":
+    		query = query.substr(3);
+    		window.location =
+        		"https://www.youtube.com/results?search_query=" +
+        		query.replaceChars(" ", "+");
+    		break;
 
         default:
             window.location="https://www.google.com/search?q=" +
