@@ -43,8 +43,8 @@ function search(query){
     	case "-n":
         	query=query.substr(3);
         	window.location =
-            	"https://nyaa.se/?page=search&cats=0_0&filter=0&term=" +
-            	query.replaceChars(" ", "%20");
+            	"https://www.nyaa.se/?page=search&cats=0_0&filter=0&term=" +
+            	query.replaceChars(" ", "+");
             break;
 
 		case "-w":
@@ -78,7 +78,5 @@ window.onload = function(){
             }
         });
     }
-
     var search_sqr = document.getElementById("search_sqr");
-
-        }
+}
