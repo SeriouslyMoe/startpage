@@ -47,6 +47,13 @@ function search(query){
             	query.replaceChars(" ", "+");
             break;
 
+		case "-u":
+			query = query.substr(3);
+			window.location =
+            	"https://" +
+            	query.replaceChars(" ", "+");
+			break;
+
 		case "-w":
 			query = query.substr(3);
 			window.location =
