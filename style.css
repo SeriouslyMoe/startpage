@@ -6,8 +6,11 @@
 body {
     max-width: 900px;
     margin: 40px auto;
-    background-image: url("https://raw.githubusercontent.com/sleepywitchgal/startpage/master/mascots/_sucy-mushroom_shop.png");
-	background-position: center top;
+    background: url("https://raw.githubusercontent.com/sleepywitchgal/startpage/master/mascots/_sucy-mushroom_shop.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .search {
