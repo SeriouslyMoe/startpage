@@ -47,6 +47,13 @@ function search(query){
             	query.replaceChars(" ", "+");
             break;
 
+		case "-o":
+			query=query.substr(3);
+			window.location =
+				"https://osu.ppy.sh/p/beatmaplist?q=" +
+				query.replaceChars(" ", "%20");
+			break;
+
 		case "-u":
 			query = query.substr(3);
 			window.location =
