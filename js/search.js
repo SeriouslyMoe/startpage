@@ -20,30 +20,10 @@ function search(query){
 				query.replaceChars(" ", "+");
 			break;
 
-        case "-g":
-            query = query.substr(3);
-            window.location = "http://gelbooru.com/index.php?page=post&s=list&tags=" +
-                query.replaceChars(" ", "+");
-            break;
-
-        case "-d":
-            query = query.substr(3);
-            window.location =
-                "http://danbooru.donmai.us/posts?utf8=✓&tags" +
-                query.replaceChars(" ", "+");
-            break;
-
-		case "-i":
-	        query = query.substr(3);
-	        window.location =
-	            "https://www.google.com/search?site=&tbm=isch&q=" +
-	            query.replaceChars(" ", "+");
-	        break;
-
     	case "-n":
         	query=query.substr(3);
         	window.location =
-            	"https://www.nyaa.se/?page=search&cats=0_0&filter=0&term=" +
+            	"https://nyaa.pantsu.cat/search?c=_&s=0&max=50&userID=0&q=" +
             	query.replaceChars(" ", "+");
             break;
 
@@ -54,10 +34,10 @@ function search(query){
 				query.replaceChars(" ", "%20");
 			break;
 
-		case "-u":
+		case "-v":
 			query = query.substr(3);
 			window.location =
-            	"https://" +
+            	"http://vgmdb.net/search?q=" +
             	query.replaceChars(" ", "+");
 			break;
 
