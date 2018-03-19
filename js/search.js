@@ -14,44 +14,44 @@ String.prototype.replaceChars = function(character, replacement){
 
 function search(query){
     switch(query.substr(0, 2)){
-		case "-a":
-			query = query.substr(3);
-			window.location = "https://animebytes.tv/torrents.php?searchstr=" +
-				query.replaceChars(" ", "+");
-			break;
+	case "-a":
+		query = query.substr(3);
+		window.location = "https://animebytes.tv/torrents.php?searchstr=" +
+			query.replaceChars(" ", "+");
+		break;
+
+	case "-c":
+		query = query.substr(3);
+		window.location = "http://champion.gg/champion/" + query;
+		break;
 
     	case "-n":
         	query=query.substr(3);
-        	window.location =
-            	"https://nyaa.pantsu.cat/search?c=_&s=0&max=50&userID=0&q=" +
-            	query.replaceChars(" ", "+");
+        	window.location = "https://nyaa.pantsu.cat/search?c=_&s=0&max=50&userID=0&q=" +
+            		query.replaceChars(" ", "+");
             break;
 
-		case "-o":
-			query=query.substr(3);
-			window.location =
-				"https://osu.ppy.sh/p/beatmaplist?q=" +
-				query.replaceChars(" ", "%20");
-			break;
+	case "-o":
+		query=query.substr(3);
+		window.location = "https://osu.ppy.sh/p/beatmaplist?q=" +
+			query.replaceChars(" ", "%20");
+		break;
 
-		case "-v":
-			query = query.substr(3);
-			window.location =
-            	"http://vgmdb.net/search?q=" +
-            	query.replaceChars(" ", "+");
-			break;
+	case "-v":
+		query = query.substr(3);
+		window.location = "http://vgmdb.net/search?q=" +
+            		query.replaceChars(" ", "+");
+		break;
 
-		case "-w":
-			query = query.substr(3);
-			window.location =
-				"https://en.wikipedia.org/wiki/Special:Search?search=" +
-				query.replaceChars(" ", "+");
-			break;
+	case "-w":
+		query = query.substr(3);
+		window.location = "https://en.wikipedia.org/wiki/Special:Search?search=" +
+			query.replaceChars(" ", "+");
+		break;
 
-		case "-y":
+	case "-y":
     		query = query.substr(3);
-    		window.location =
-        		"https://www.youtube.com/results?search_query=" +
+    		window.location = "https://www.youtube.com/results?search_query=" +
         		query.replaceChars(" ", "+");
     		break;
 
