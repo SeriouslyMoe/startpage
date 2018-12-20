@@ -20,9 +20,9 @@ function search(query){
 			query.replaceChars(" ", "+");
 		break;
 
-	case "-c":
+	case "-u":
 		query = query.substr(3);
-		window.location = "http://champion.gg/champion/" + query;
+		window.location = "https://u.gg/lol/champions/" + query + "/build/";
 		break;
 
     	case "-n":
